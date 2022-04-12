@@ -8,6 +8,6 @@ function random(number) {
   return Math.floor(Math.random() * number);
 }
 document.onclick = function () {
-  BgAcak = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  BgAcak = 'rgb(' + random(155) + ',' + random(125) + ',' + random(255) + ')';
   box.style.background = BgAcak;
 };
