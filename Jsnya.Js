@@ -4,6 +4,10 @@ document.onmousemove = (event) => {
   box.style.top = event.clientY - box.clientHeight / 2 + 'px';
 };
 
-function acak(number) {
+function random(number) {
   return Math.floor(Math.random() * number);
 }
+document.onclick = function () {
+  BgAcak = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  box.style.background = BgAcak;
+};
